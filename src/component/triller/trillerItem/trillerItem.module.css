@@ -1,0 +1,209 @@
+.container {
+  position: relative;
+  display: flex;
+  composes: container from "../../../pages/app/app.css";
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    height: calc(100vh - 66px);
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover !important;
+}
+
+.box {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* padding: 40px 0; */
+}
+
+.box .info {
+  font-family: Montserrat;
+  font-style: normal;
+  flex-direction: column;
+  display: flex;
+  width: 30%;
+  max-width: 30%;
+  padding-right: 30px;
+  flex: 1;
+}
+.info .name {
+  margin: 10px 0px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+}
+.info .country {
+  margin: 10px 0px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.info .description {
+  margin: 10px 0px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+}
+.genre {
+  margin: 10px 0px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.genreItem {
+  margin: 3px;
+  padding: 3px 10px;
+  margin-right: 10px;
+  background: #111112;
+  /* font-family: LatoRegular; */
+  border-radius: 25px;
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.rating {
+  margin: 10px 0px;
+
+  display: flex;
+}
+
+.rating .title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button {
+  margin: 10px 0px;
+}
+
+.box .player {
+  display: flex;
+  padding: 40px;
+  padding-right: 0;
+  flex: 1;
+}
+
+
+@media only screen and (max-width: 970px) {
+  .container {
+    height: auto;
+  }
+
+  .box {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .box .info {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .name {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .box .player {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .button {
+    margin: 0px auto;
+    transform: translateY(0px) !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .box .info > h1.name {
+    font-size: 30px;
+  }
+
+  .box .info > h6.description {
+    font-size: 15px;
+  }
+
+  .box .info .genre .genreItem {
+    font-size: 12px;
+  }
+
+  .button {
+    transform: translateY(25px);
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .box .info > h1.name {
+    font-size: 30px;
+  }
+
+  .box .info > h6.description {
+    font-size: 15px;
+  }
+
+  .box .info .genre .genreItem {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 30px;
+    height: calc(100vh - 66px);
+  }
+
+  .box .info > h1.name {
+    font-size: 30px;
+  }
+
+  .box .info > h6.counter {
+    font-size: 18px;
+  }
+
+  .box .info > h6.description {
+    font-size: 18px;
+  }
+
+  .box .info .genre .genreItem {
+    font-size: 12px;
+  }
+
+  .button > button {
+    font-size: 18px;
+  }
+  .box .info{
+    max-width: none;
+  }
+  .player{
+    max-height: 189px;
+  }
+  .button{
+
+  }
+}

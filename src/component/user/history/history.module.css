@@ -1,0 +1,87 @@
+.container {
+    composes: container from "../profile/profile.module.css";
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    width: 50%;
+    height: min-content;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+  }
+  
+  .title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title > div:nth-child(2) {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 130%;
+    color: #d7141d;
+  }
+  
+  .description {
+    margin-top: 20px;
+    display: flex;
+    width: 59%;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 130%;
+    color: #777777;
+  }
+  .costSection {
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    width: 50%;
+  }
+  
+  .cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 130%;
+    color: #d7141d;
+  }
+
+
+.pagination {
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cost img {
+    margin-right: 5px;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .box {
+      width: 100% !important;
+    }
+  }
+  

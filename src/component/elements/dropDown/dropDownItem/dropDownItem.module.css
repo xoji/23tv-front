@@ -1,0 +1,9 @@
+.dropdownItems{
+    padding: 10px;
+    border-bottom: 1px solid #E0DFDF;;
+}
+
+.dropdownItems:hover{
+    background: #c5c5c5;
+    cursor: pointer;
+}

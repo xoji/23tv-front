@@ -1,0 +1,153 @@
+.margin {
+  margin-top: -35px;
+}
+.container {
+  composes: container from "../profile/profile.module.css";
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 420px;
+  padding: 32px 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+
+}
+
+.tarHeading {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+.tarDesc {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #777777;
+  transition: all .3s;
+}
+.box:hover .tarDesc {
+  color: #9a9a9a;
+}
+.tarPrice {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.tarButton {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 19px;
+  color: #D7141D;
+  background: transparent;
+  width: auto;
+  border: none;
+  cursor: pointer;
+  display: inline;
+}
+.tarButton:hover {
+  text-decoration: underline;
+}
+
+.messageBox {
+  padding: 15px 25px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  border-radius: 4px;
+  transition: all .3s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.activeMessage {
+  transform: translateY(0);
+  opacity: 1;
+}
+.messageText {
+  font-family: Roboto, sans-serif;
+  font-size: 23px;
+  color: #FFFFFF;
+}
+.errorMessage {
+  background: #980000;
+}
+.message {
+  background: #006410;
+}
+.activeCard {
+  margin-top: 30px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  height: min-content;
+}
+.activeTitle {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 19px;
+  margin: 0 0 15px;
+}
+.activeDescription {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #777777;
+  margin: 0 0 15px;
+}
+.expDate {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.activeMore {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.moreText {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #D7141D;
+}
+.moreIcon {
+  width: 20px;
+  height: 20px;
+  fill: #D7141D;
+  margin-left: 10px;
+}

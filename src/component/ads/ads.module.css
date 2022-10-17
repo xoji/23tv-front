@@ -1,0 +1,78 @@
+.container {
+  composes: container from "../../pages/app/app.css";
+  width: 100%;
+}
+
+.container * {
+  font-family: "Lato", sans-serif;
+}
+
+.ads {
+  margin-bottom: 20px;
+}
+
+.ads a {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+
+.ads a img {
+  width: 100%;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    max-width: 950px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    max-width: 890px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    padding: 0 15px !important;
+  }
+  .ads {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    composes: container from "../../pages/app/app.css";
+    padding: 0 15px;
+  }
+}

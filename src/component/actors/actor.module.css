@@ -1,0 +1,53 @@
+.container {
+  composes: container from "../../pages/app/app.css";
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.notFount {
+  font-family: "Lato", sans-serif;
+}
+
+.typeButton {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.typeButton * {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.actors {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .sliderContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .typeButton button {
+    font-size: 10px;
+  }
+
+  .sliderContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+.area {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+.fields {
+  width: 50%;
+  height: 100%;
+  padding: 30px 120px;
+  padding-right: 160px;
+  color: white;
+}
+
+.mask {
+  width: 50%;
+}
+.mask img {
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .fields {
+    padding: 30px 17px;
+    padding-right: 100px;
+    color: white;
+  }
+}
+@media screen and (max-width: 760px) {
+  .fields {
+    padding-right: 17px;
+    width: 100%;
+  }
+  .area {
+    flex-direction: column;
+  }
+  .mask {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

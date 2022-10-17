@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.degree{
+    display: flex;
+    height: 15px;
+    margin-left: 3px;
+}
+.container img:hover{
+    cursor: pointer;
+}
+.degree:hover{
+    cursor: pointer;
+}
+.degree div{
+    margin-right: 1px;
+    display: flex;
+    height: 100%;
+    width: 4px;
+    background: #777777;
+    border-radius: 2px;
+}
+.degree div:hover{
+    cursor: pointer;
+}

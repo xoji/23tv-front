@@ -1,0 +1,95 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+.container video{
+    display: flex;
+    max-width: 100%;
+    max-height: 90vh;
+    height: 100%;
+}
+
+video::-webkit-media-controls-panel{
+    width: 100%;
+}
+
+.playPause{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.controlBtns{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.controls{
+    margin-top: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.774);
+    min-height: 20px;
+    width: 100%;
+    z-index: 9;
+    padding: 2px;
+    padding-bottom: 10px;
+    user-select: none;
+    color: wheat;
+    transition: all .3s;
+}
+.hiddenControl{
+    opacity: 0;
+}
+.hideCursor{
+    cursor: none;
+}
+.playerVisible{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+.playingStatus{
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+}
+.playingStatus:hover{
+    cursor: pointer;
+    background-color: rgba(61, 61, 61, 0.281);
+}
+
+.duration{
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #C4C4C4;
+}
+
+.prevTap, .nextTap{
+    z-index: 8;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+}
+
+.prevTap{
+    left: 0;
+}
+.nextTap{
+    right: 0;
+}

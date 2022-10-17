@@ -1,0 +1,33 @@
+.container {
+    composes: container from "../../pages/app/app.css";
+    display: flex;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    margin-top: 20px;
+}
+
+
+.title_category{
+    display: flex;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 29px;
+    align-items: center;
+}
+
+.containerMovie {
+    composes: container from "../../pages/app/app.css";
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 815px) {
+    .containerMovie {
+        flex-direction: column;
+        align-items: center;
+    }
+}

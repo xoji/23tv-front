@@ -1,0 +1,38 @@
+.dropdown{
+    user-select: none;
+    display: flex;
+    position: relative;
+}
+
+.itemOne{
+    display: flex;
+    align-items: center;
+    padding:10px 14px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.itemOne svg{
+    margin-left: 10px;
+}
+.itemOne:hover{
+    cursor: pointer;
+}
+.items{
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top:100%;
+    right: 0;
+    flex-direction: column;
+    background: #1f1c1c;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #1D2C3C;
+    z-index: 9999;
+}

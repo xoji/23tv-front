@@ -1,0 +1,109 @@
+.container {
+  composes: container from "../../pages/app/app.css";
+  position: relative;
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.container * {
+  font-family: "Lato", sans-serif;
+}
+.commentContainer {
+  display: flex;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 70px;
+  font-family: Montserrat;
+  font-style: normal;
+  padding-bottom: 14px;
+}
+.addComment {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+}
+.comments .title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 33px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.comments .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #bbbbbb;
+}
+.comments .slider {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addComment .label {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.addComment textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  height: 205px;
+  padding: 10px;
+  color: white;
+  background: rgba(196, 196, 196, 0.05);
+  border-radius: 8px;
+}
+.addComment .button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 1025px) {
+  .comments .slider {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 760px) {
+  .commentContainer {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 20px !important;
+  }
+
+  .description {
+    font-size: 14px !important;
+  }
+  .comments {
+    width: 100%;
+    padding-right: 0;
+  }
+  .addComment {
+    padding-left: 0;
+    width: 100%;
+  }
+  .addComment .button {
+    justify-content: center;
+  }
+}

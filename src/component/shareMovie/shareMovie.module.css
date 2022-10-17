@@ -1,0 +1,114 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.modal_container {
+  position: relative;
+  width: 30%;
+  height: 30vh;
+  margin: 0 auto;
+
+  margin-top: 15%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.modal_body {
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+}
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.close_button {
+  width: 25px;
+  height: 25px;
+  background-color: #f8f9fc;
+  border: none;
+}
+.sharing_container {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.sharing_container::-webkit-scrollbar {
+  display: none;
+}
+
+.sharing_container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.sharing_container .share_item {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.sharing_container .share_item:first-child {
+  margin: 0;
+}
+
+.sharing_container .share_item p {
+  margin-top: 5px;
+}
+
+.link_copy {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #777;
+  overflow: hidden;
+}
+
+.share_link_input {
+  width: 70%;
+  padding: 5px;
+  border: none;
+}
+
+.copy_button {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+
+.start_at {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  user-select: none;
+}
+
+.input_start_at {
+  margin-left: 7px;
+}
+
+.input_start_at input {
+  width: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+  margin-left: 5px;
+}
+
+
+
+

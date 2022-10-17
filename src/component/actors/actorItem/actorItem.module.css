@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 178px;
+  margin-left: 37px;
+  font-family: "Lato", sans-serif;
+}
+
+.container:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.container:last-child {
+  padding-right: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image .img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.name {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.role {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width: 450px) {
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+}

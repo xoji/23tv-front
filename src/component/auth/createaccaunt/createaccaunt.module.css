@@ -1,0 +1,49 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.navigation img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(53, 53, 53);
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.regLink {
+    color: red;
+    text-decoration: none;
+}
+
+.regLink:hover {
+    text-decoration: underline;
+}
+
+.title div:nth-child(1){
+    
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.title div:nth-child(2){
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #D7141D;
+}
+.title div:nth-child(2):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

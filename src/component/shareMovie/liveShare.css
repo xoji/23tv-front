@@ -1,0 +1,52 @@
+.live-close {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    width: 29px;
+    height: 29px;
+    border-radius: 5px;
+  }
+  .share__live-wrapper {
+    padding: 30px;
+    font-family: "Lato", sans-serif;
+      background-color: #fff;
+      border-radius: 5px;
+      height: 280px;
+  }
+  .live__container {
+    position: relative;
+    max-width: 350px;
+    min-width: 450px;
+    height: 30vh;
+    margin: 0 auto;
+  
+    margin-top: 15%;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  @media screen and (max-width: 500px) {
+    .live__container {
+        min-width: 400px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .live__container {
+        min-width: 370px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .live__container {
+        min-width: 350px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .live__container {
+        min-width: 330px;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    .live__container {
+        min-width: 300px;
+    }
+  }

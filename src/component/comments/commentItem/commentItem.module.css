@@ -1,0 +1,44 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+    height: 205px;
+    background: rgba(196, 196, 196, 0.05);
+    border-radius: 8px;
+    padding:30px 20px ;
+    color: white;
+}
+.author, .comment{
+    padding:0 20px;
+}
+.divider{
+    display: flex;
+    height: 100%;
+    width: 1px;
+    background-color: white;
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */ 
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #F6F6F6;
+ }
+ .comment{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    color: #F6F6F6;
+ }

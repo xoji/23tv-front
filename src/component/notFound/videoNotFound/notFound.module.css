@@ -1,0 +1,6 @@
+.container{
+    composes:container from '../../../pages/app/app.css';
+}
+.text{
+    color: white;
+}

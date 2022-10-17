@@ -1,0 +1,89 @@
+.contentContainer{
+    width: 100%;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+.content{
+    display: flex;
+    width: 100%;
+    min-height: 60vh;
+}
+.sidebar{
+    display: flex;
+    width: 40%;
+}
+.mask{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 130px;
+}
+.mask>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.imageAvatar{
+    display: none;
+}
+.balance{
+    display: none;
+}
+
+.pairs .key{
+    color: #777777;
+    margin-right: 10px;
+}
+
+.pairs .val {
+    color: #fff;
+}
+
+@media screen  and (max-width:768px) {
+    .contentContainer{
+        flex-direction: column-reverse;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .mask{
+        position: relative;
+    }
+    .imageAvatar{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 10px;
+        z-index: 6;
+    }
+    .usernameBox{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 10px;
+        color: white;
+        margin-left: auto;
+    }
+    .balance{
+        display: flex;
+        padding: 10px;
+        
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .pairs{
+        display: flex;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 19px;
+    }
+}

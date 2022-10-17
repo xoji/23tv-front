@@ -1,0 +1,110 @@
+.buttons {
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 20px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 24px;
+  background: #383839;
+  border-radius: 24px;
+}
+
+.buttons .box {
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  display: flex;
+  /* background-color: #111112; */
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  user-select: none;
+  background-color: #9494952f;
+}
+
+.buttons .box:hover {
+  cursor: pointer;
+  background-color: #9494952f;
+}
+
+.buttons .box.active {
+  position: relative;
+  background-color: #df3e0d;
+}
+
+:root {
+  --border: 1.5px;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 1000px;
+  transform: translate(-50%);
+  z-index: 99;
+  /* justify-content: center; */
+}
+
+.next,
+.prev {
+  user-select: none;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* background: rgba(255, 255, 255, 0.8); */
+  background: #d7141d;
+  /* border-radius: 2px; */
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+.next {
+  margin-left: 2px;
+}
+.next:hover,
+.prev:hover {
+  cursor: pointer;
+}
+.next svg path,
+.prev svg path {
+  stroke: white;
+}
+
+.minMaxBack {
+  background: #1b1b1b !important;
+}
+.minMaxStroke {
+  stroke: white;
+}
+
+.advTopPrev {
+  transform: translateY(-170px) translateX(-130%);
+}
+.advTopNext {
+  transform: translateY(-170px) translateX(130%);
+}
+
+@media only screen and (max-width: 1026px) {
+  .next,
+  .prev {
+    margin-top: auto;
+  }
+  .buttons {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .advTopPrev {
+    transform: translate(0, 0);
+    margin-left: 30px;
+  }
+  .advTopNext {
+    transform: translate(0, 0);
+    margin-right: 30px;
+  }
+}

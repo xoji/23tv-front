@@ -1,0 +1,28 @@
+.navigation{
+    composes:navigation from '../enterpassword/enterpassword.module.css'
+}
+.title{
+    font-family: 'Lato', sans-serif;
+    composes:title from '../createaccaunt/createaccaunt.module.css'
+}
+
+.buttonLink{
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 30px;
+    
+    color: #D7141D;
+}
+.buttonLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.regLink {
+    color: red;
+    text-decoration: none;
+}
+
+.regLink:hover {
+    text-decoration: underline;
+}

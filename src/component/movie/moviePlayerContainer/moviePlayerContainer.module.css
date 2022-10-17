@@ -1,0 +1,155 @@
+.container {
+  composes: container from "../../../pages/app/app.css";
+  padding-top: 30px;
+  overflow: visible;
+  font-family: "Lato", sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  align-items: center;
+  padding-top: 28px;
+}
+.title_films {
+  display: flex;
+  align-items: baseline;
+}
+.title_films p {
+  color: #bbbbbb;
+  margin-right: 8px;
+}
+
+.title_films.black p {
+  color: rgba(187, 187, 187, 1);
+}
+
+.serialItems {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  padding: 5px 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.title_films h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.title_films.black h3 {
+  color: rgba(17, 17, 18, 1);
+}
+
+.additional_functions {
+  display: flex;
+  margin-left: auto;
+}
+.additional_functions > div {
+  margin-left: 20px;
+}
+
+.configures {
+  display: flex;
+}
+
+.dropdown {
+  border-radius: 19px;
+  margin-right: 10px;
+}
+.icon {
+  margin-right: 5px;
+}
+.btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #777777;
+}
+
+.playerArea {
+  display: flex;
+  width: 100%;
+  max-height: 90vh;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cover img {
+  width: 100%;
+}
+
+.controlBtn {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.additional_functions.black > div > .btn {
+  background: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  .btn {
+    font-size: 10px !important;
+  }
+
+  .title_films > h3 {
+    font-size: 24px;
+  }
+
+  .playerArea {
+    /* max-height: 20vh; */
+  }
+
+  .cover img {
+    /* max-height: 20vh; */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn > img {
+    width: 10px;
+  }
+
+  .title_films > h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn > p {
+    display: none;
+  }
+}

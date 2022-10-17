@@ -1,0 +1,32 @@
+.live__input {
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  .live__textarea {
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding: 15px;
+    max-width: 250px!important;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  .live__btn {
+      margin-right: auto;
+    border: none;
+    margin-top: 15px;
+    outline: none;
+    padding: 8px 29px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+  }

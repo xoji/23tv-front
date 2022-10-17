@@ -1,0 +1,133 @@
+.container {
+  composes: container from "../../../pages/app/app.css";
+  display: flex;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  margin-top: 20px;
+}
+
+.items * {
+  font-family: "Lato", sans-serif;
+}
+.items {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-left: -20px;
+  padding: 30px 0;
+  overflow-x: scroll;
+  overflow: auto;
+}
+
+.items::-webkit-scrollbar {
+  display: block !important;
+  height: 5px;
+  visibility: hidden;
+}
+
+.items::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: none;
+  background-color: #6b6b6b63;
+}
+.nav_item {
+  min-width: max-content;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  border-radius: 32px;
+  text-decoration: none;
+  color: #777777;
+  background: #242425;
+}
+.nav_item:hover {
+  cursor: pointer;
+  background: #313131;
+}
+.nav_item.activeCategory {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.12) 9.82%,
+      rgba(255, 255, 255, 0) 92.86%
+    ),
+    #d7141d !important;
+  border: none;
+  color: white;
+}
+.nav_item.activeCategory:hover {
+  color: #fff;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.12) 9.82%,
+      rgba(255, 255, 255, 0) 92.86%
+    ),
+    #d7141d;
+}
+
+@media (max-width: 900px) {
+  .items {
+    width: max-content;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    /* background-color: #d7141d; */
+  }
+  .container {
+    composes: container from "../../../pages/app/app.css";
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    composes: container from "../../../pages/app/app.css";
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    composes: container from "../../../pages/app/app.css";
+    max-width: 400px;
+    padding: 0;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    composes: container from "../../../pages/app/app.css";
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 18px;
+  }
+
+  .items {
+    margin: 0 0.5px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    composes: container from "../../../pages/app/app.css";
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    composes: container from "../../../pages/app/app.css";
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}

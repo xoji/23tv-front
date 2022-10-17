@@ -1,0 +1,22 @@
+.navigation{
+    composes:navigation from '../enterpassword/enterpassword.module.css';
+}
+.title{
+    composes:title from '../createaccaunt/createaccaunt.module.css';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.buttonLink{
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D7141D;
+}
+.buttonLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
